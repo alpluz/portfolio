@@ -1,14 +1,10 @@
-## Portfólio Olá, Bem vindo ao meu projeto de portfólio.
+## Olá, Bem vindo ao meu projeto de portfólio.
 
-
-## Imagem de capa
-
-Adicione a imagem de capa com o tema do seu projeto:
 
 ![Imagem_cap](https://github.com/alpluz/portfolio/assets/172930754/621d5b33-f894-4361-9e1f-690b89fd2d29)
 
       
-# Nome do projeto
+# Portfólio
 
 Neste projeto criamos uma página web com navegação para um segunda página e para links externos.
 
