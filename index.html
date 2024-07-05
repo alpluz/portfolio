@@ -1,0 +1,40 @@
+<!--alteramos de "en" para "pt-br" / linha 7-->
+<!--codificação dos caracteres que iremos utilizar (caracteres especiais) / linha 9-->
+<!--Configuração especifica para o Edge, para sempre utilizar a versao mais recente do navegador edge / linha 10-->
+<!--viewport = pega a largura do dispositivo que esta acessando nossa pagina para adequar a pagina / linha 11-->
+<!--Adicionamos a tag <link> para ligar o HTML ao CSS que criamos / linha 13-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__links" href="index.html">Home</a>
+            <a class="cabecalho__menu__links" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo"> <!--adicionamos essa tag para criarmos uma secao nova, quando vamos escrever o nome de uma seção filho, usamos o nome do pai__nome do filho (curso 2 / aula 3)-->
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio a outro nível <strong class="titulo-destaque">com uma abordagem de qualidade!</strong></h1>
+            <p class="apresentacao__conteudo__texto">Olá! Sou André Luz, Economista / Analista de Sistemas e Finanças / Gestor Administrativo e de Dados / Consultoria Personalizada. Ajudo grandes e pequenos negócios a colocarem em prática boas ideias. Vamos conversar?</p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+                <!--Adicionamos target="_blank" rel="noopener noreferrer" para que o link seja aberto numa nova pagina sem problema de "tabnabbing" exploit-->
+                <a class="apresentacao__links__botao" href="https://github.com/alpluz" target="_blank" rel="noopener noreferrer"><img src="./img/github.png"> GitHub</a>
+                <a class="apresentacao__links__botao" href="https://www.linkedin.com/in/alpluz" target="_blank" rel="noopener noreferrer"><img src="./img/linkedin.png">Linkedin</a>
+                <a class="apresentacao__links__botao" href="https://instagram.com/luzpartners" target="_blank" rel="noopener noreferrer"><img src="./img/instagram.png">Instagram</a>
+            </div>
+        </section>
+        <img class="apresentacao__imagem" src="./img/Andremax.png" alt="Foto Andre Luz">
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por ALPLUZ.</p>
+    </footer>
+</body>
+</html>

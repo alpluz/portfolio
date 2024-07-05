@@ -1,0 +1,164 @@
+/*background - color = cor do fundo / color = cor da fonte*/
+/*usamos a tag strong para alterar a cor do texto apenas deste trecho do titulo*/
+/*estamos zerando margem e padding na linha 4. (curso 2 / Aula 1)*/
+
+/*linha 5 estamos importando as fontes "Krona One" para o titulo e "Montserrat" para o paragrafo(curso 2 / aula 3)*/ 
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*aqui estamos declarando variaveis de cor para nosso projeto (curso 3 / Aula 5)*/
+:root {
+    --cor-primaria: #000000;
+    --cor-scundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; retiramos este parametro para que o body pegue a pagina inteira, inclusive o footer (curso 3 / aula 3)*/
+    box-sizing: border-box; /*adicionamos este elemento para controlar tamanho elemento filho e pai (curso 2 / aula 2)*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-scundaria);
+}
+
+/*definindo os parametros para a classe cabecalho (curso 3 / aula 4) */
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+
+}
+
+/*definindo os parametros para a classe cabecalho__menu (curso 3 / Aula 4)*/
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+/*definindo os parametros para a classe cabecalho__menu__links (curso 3 / aula 4)*/
+.cabecalho__menu__links {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+/*utilizando a ferramenta flexbox, container/classe main = apresentacao/ adicionamos um gap para separar os filhos (section e img) (curso 4 / aula 3)*/
+.apresentacao {
+    /* margin: 10% 20%; alteramos este parametro por padding (curso 3 / Aula 3) */
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+/*definindo os parametros da secao filho / alteramos o width de 615px para 50% (curso 4 / Aula 2)*/
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/*definindo os parametros da secao titulo*/
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+/*substituimos a tag strong abaixo pelo seletor de classe dele, e para chamar esse seletor iniciamos com ponto "."
+.strong {
+    color: #22D4FD;
+}*/
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+/*definindo os parametros da secao paragrafo*/
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+/*definindo os parametros para os links / adicionamos flexbox e justify-content (Curso 3 aula 2)*/
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+/*definindo os parametros para o subtitulo dos links*/
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+/*definindo os parametros para os botoes (ancoras) / alteramos o width de 378px para 50% (Curso 4 / Aula 2)*/
+.apresentacao__links__botao {
+    /*background-color: #22D4FD; (retiramos esta parte do codigo (curso 3 Aula 1) para ajustar o background color dos botoes*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--cor-scundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+/*adicionando um efeito de Hover aos botoes (Curso 3 / Aula 2)*/
+.apresentacao__links__botao:hover {
+    background-color: var(--cor-hover);
+    padding: 3.5%;
+}
+
+/*classe criada por mim para adicionar borda redonda na imagem / alterei o nome da classe (curso 4 / aula 2)*/
+.apresentacao__imagem {
+    width: 50%;
+    border-radius: 12px;
+}
+
+/*definindo os parametros para o Footer*/
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 24px;   
+    text-align: center; 
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/*definindo (condicoes) e {parametros} para o elemento @media (curso 4 / Aula 3) Usando o figma mobile*/
+/*adicionamos o column-rever para inverter a ordem de apresentacao para img depois section.*/
+@media (max-width:1200px) {
+    .cabecalho {
+        padding: 10%;
+        ;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
