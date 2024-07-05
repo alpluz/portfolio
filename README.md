@@ -15,7 +15,7 @@ O portfólio foi criado durante o curso de HTML e CSS da Alura. Permite ao usuá
 ## ✔️ Técnicas e tecnologias utilizadas
 
 - `HTML`: foi criado e desenvolvido toda a estrutura HTML do portfólio
-- `CSS 2`: foi criado e desenvolvido todos os estilos aplicados no poprtfólio.
+- `CSS 2`: foi criado e desenvolvido todos os estilos aplicados no portfólio.
 
 ## 📁 Acesso ao projeto
 
@@ -23,7 +23,8 @@ O código fonte do projeto está disponivel no repositorio: https://github.com/a
 
 ## 🛠️ Abrir e rodar o projeto
 
-Acessar a url: https://alpluz-portfolio.vercel.app/
+Acessar: https://alpluz-portfolio.vercel.app/
 
 ## 📚 Mais informações do curso
 
+https://cursos.alura.com.br/course/html-css-responsividade-publicacao-projetos
